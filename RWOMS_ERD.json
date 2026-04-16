@@ -1,0 +1,1460 @@
+{
+  "id": "0",
+  "name": "sqlite",
+  "createdAt": "2026-04-16T22:38:43.268Z",
+  "updatedAt": "2026-04-16T22:43:16.602Z",
+  "databaseType": "sqlite",
+  "tables": [
+    {
+      "id": "1",
+      "name": "Technicians",
+      "x": 524,
+      "y": 630.0000000000001,
+      "fields": [
+        {
+          "id": "2",
+          "name": "technician_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": true,
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "3",
+          "name": "first_name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "50",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "4",
+          "name": "last_name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "50",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "5",
+          "name": "employee_id",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": true,
+          "nullable": true,
+          "characterMaximumLength": "20",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "6",
+          "name": "hourly_rate",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "precision": 8,
+          "scale": 2,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "7",
+          "name": "hire_date",
+          "type": {
+            "id": "date",
+            "name": "date"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "8",
+          "name": "is_active",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "1",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "9",
+          "name": "created_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "10",
+          "name": "modified_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "11",
+          "name": "",
+          "fieldIds": [
+            "2"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        },
+        {
+          "id": "12",
+          "name": "sqlite_autoindex_Technicians_1",
+          "unique": true,
+          "fieldIds": [
+            "5"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "13",
+      "name": "Addresses",
+      "x": 1372,
+      "y": 100,
+      "fields": [
+        {
+          "id": "14",
+          "name": "address_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": false,
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "15",
+          "name": "street_address",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "200",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "16",
+          "name": "city",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "100",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "17",
+          "name": "state",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "50",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "18",
+          "name": "zip_code",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "20",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "19",
+          "name": "country",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "50",
+          "default": "'USA'",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "20",
+          "name": "address_type",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "20",
+          "increment": false,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "21",
+          "name": "",
+          "fieldIds": [
+            "14"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "22",
+      "name": "Contacts",
+      "x": 100,
+      "y": 100,
+      "fields": [
+        {
+          "id": "23",
+          "name": "contact_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": true,
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "24",
+          "name": "customer_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "25",
+          "name": "location_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "26",
+          "name": "first_name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "50",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "27",
+          "name": "last_name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "50",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "28",
+          "name": "title",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "100",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "29",
+          "name": "created_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "30",
+          "name": "modified_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "31",
+          "name": "",
+          "fieldIds": [
+            "23"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        },
+        {
+          "id": "32",
+          "name": "idx_contacts_customer",
+          "unique": false,
+          "fieldIds": [
+            "24"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "33",
+      "name": "Work_Orders",
+      "x": 948,
+      "y": 630,
+      "fields": [
+        {
+          "id": "34",
+          "name": "work_order_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "35",
+          "name": "location_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "36",
+          "name": "technician_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "37",
+          "name": "service_type_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "38",
+          "name": "reported_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "39",
+          "name": "scheduled_date",
+          "type": {
+            "id": "date",
+            "name": "date"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "40",
+          "name": "completed_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "41",
+          "name": "time_worked",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "precision": 5,
+          "scale": 2,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "42",
+          "name": "status",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "20",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "43",
+          "name": "priority",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "10",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "44",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "45",
+          "name": "created_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "46",
+          "name": "modified_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "47",
+          "name": "",
+          "fieldIds": [
+            "34"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        },
+        {
+          "id": "48",
+          "name": "idx_work_orders_status",
+          "unique": false,
+          "fieldIds": [
+            "42"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        },
+        {
+          "id": "49",
+          "name": "idx_work_orders_technician",
+          "unique": false,
+          "fieldIds": [
+            "36"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        },
+        {
+          "id": "50",
+          "name": "idx_work_orders_location",
+          "unique": false,
+          "fieldIds": [
+            "35"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "51",
+      "name": "Service_Types",
+      "x": 1027.1959594928933,
+      "y": 1191.1959594928933,
+      "fields": [
+        {
+          "id": "52",
+          "name": "service_type_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": true,
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "53",
+          "name": "service_name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": true,
+          "nullable": false,
+          "characterMaximumLength": "100",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "54",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "55",
+          "name": "base_fee",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "precision": 8,
+          "scale": 2,
+          "default": "0.00",
+          "increment": false,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "56",
+          "name": "",
+          "fieldIds": [
+            "52"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        },
+        {
+          "id": "57",
+          "name": "sqlite_autoindex_Service_Types_1",
+          "unique": true,
+          "fieldIds": [
+            "53"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "58",
+      "name": "Email_Addresses",
+      "x": 100.00000000000003,
+      "y": 550,
+      "fields": [
+        {
+          "id": "59",
+          "name": "email_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": true,
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "60",
+          "name": "contact_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "61",
+          "name": "email_address",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "100",
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "62",
+          "name": "email_type",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "20",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "63",
+          "name": "is_primary",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "0",
+          "increment": false,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "64",
+          "name": "",
+          "fieldIds": [
+            "59"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "65",
+      "name": "Billing",
+      "x": 1372,
+      "y": 630,
+      "fields": [
+        {
+          "id": "66",
+          "name": "billing_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": true,
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "67",
+          "name": "work_order_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": true,
+          "nullable": false,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "68",
+          "name": "labor_cost",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "precision": 10,
+          "scale": 2,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "69",
+          "name": "service_fee",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "precision": 10,
+          "scale": 2,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "70",
+          "name": "total_amount",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "precision": 10,
+          "scale": 2,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "71",
+          "name": "billing_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "72",
+          "name": "due_date",
+          "type": {
+            "id": "date",
+            "name": "date"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "73",
+          "name": "paid_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "74",
+          "name": "payment_status",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "20",
+          "increment": false,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "75",
+          "name": "",
+          "fieldIds": [
+            "66"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        },
+        {
+          "id": "76",
+          "name": "idx_billing_status",
+          "unique": false,
+          "fieldIds": [
+            "74"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        },
+        {
+          "id": "77",
+          "name": "sqlite_autoindex_Billing_1",
+          "unique": true,
+          "fieldIds": [
+            "67"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "78",
+      "name": "Phone_Numbers",
+      "x": -324,
+      "y": 100.00000000000006,
+      "fields": [
+        {
+          "id": "79",
+          "name": "phone_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": false,
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "80",
+          "name": "contact_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "81",
+          "name": "phone_number",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "20",
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "82",
+          "name": "phone_type",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "20",
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "83",
+          "name": "is_primary",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "84",
+          "name": "",
+          "fieldIds": [
+            "79"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "85",
+      "name": "Customers",
+      "x": 524,
+      "y": 100,
+      "fields": [
+        {
+          "id": "86",
+          "name": "customer_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": false,
+          "increment": true,
+          "createdAt": 1776379123266
+        },
+        {
+          "id": "87",
+          "name": "customer_name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "100",
+          "increment": false,
+          "createdAt": 1776379123266
+        },
+        {
+          "id": "88",
+          "name": "contact_person",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "characterMaximumLength": "100",
+          "increment": false,
+          "createdAt": 1776379123266
+        },
+        {
+          "id": "89",
+          "name": "created_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123266
+        },
+        {
+          "id": "90",
+          "name": "modified_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123266
+        }
+      ],
+      "indexes": [
+        {
+          "id": "91",
+          "name": "",
+          "fieldIds": [
+            "86"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "92",
+      "name": "Service_Locations",
+      "x": 948,
+      "y": 100,
+      "fields": [
+        {
+          "id": "93",
+          "name": "location_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": false,
+          "nullable": true,
+          "increment": true,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "94",
+          "name": "customer_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "95",
+          "name": "location_name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "characterMaximumLength": "100",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "96",
+          "name": "address_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "97",
+          "name": "is_active",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "1",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "98",
+          "name": "created_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        },
+        {
+          "id": "99",
+          "name": "modified_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "increment": false,
+          "createdAt": 1776379123267
+        }
+      ],
+      "indexes": [
+        {
+          "id": "100",
+          "name": "",
+          "fieldIds": [
+            "93"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1776379123268
+        },
+        {
+          "id": "101",
+          "name": "idx_service_locations_customer",
+          "unique": false,
+          "fieldIds": [
+            "94"
+          ],
+          "createdAt": 1776379123267,
+          "type": "b-tree"
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "102",
+      "name": "fk_Billing_work_order_id_Work_Orders_work_order_id",
+      "sourceTableId": "33",
+      "targetTableId": "65",
+      "sourceFieldId": "34",
+      "targetFieldId": "67",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "103",
+      "name": "fk_Contacts_customer_id_Customers_customer_id",
+      "sourceTableId": "85",
+      "targetTableId": "22",
+      "sourceFieldId": "86",
+      "targetFieldId": "24",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "104",
+      "name": "fk_Contacts_location_id_Service_Locations_location_id",
+      "sourceTableId": "92",
+      "targetTableId": "22",
+      "sourceFieldId": "93",
+      "targetFieldId": "25",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "105",
+      "name": "fk_Email_Addresses_contact_id_Contacts_contact_id",
+      "sourceTableId": "22",
+      "targetTableId": "58",
+      "sourceFieldId": "23",
+      "targetFieldId": "60",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "106",
+      "name": "fk_Phone_Numbers_contact_id_Contacts_contact_id",
+      "sourceTableId": "22",
+      "targetTableId": "78",
+      "sourceFieldId": "23",
+      "targetFieldId": "80",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "107",
+      "name": "fk_Service_Locations_address_id_Addresses_address_id",
+      "sourceTableId": "13",
+      "targetTableId": "92",
+      "sourceFieldId": "14",
+      "targetFieldId": "96",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "108",
+      "name": "fk_Service_Locations_customer_id_Customers_customer_id",
+      "sourceTableId": "85",
+      "targetTableId": "92",
+      "sourceFieldId": "86",
+      "targetFieldId": "94",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "109",
+      "name": "fk_Work_Orders_location_id_Service_Locations_location_id",
+      "sourceTableId": "92",
+      "targetTableId": "33",
+      "sourceFieldId": "93",
+      "targetFieldId": "35",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "110",
+      "name": "fk_Work_Orders_service_type_id_Service_Types_service_type_id",
+      "sourceTableId": "51",
+      "targetTableId": "33",
+      "sourceFieldId": "52",
+      "targetFieldId": "37",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    },
+    {
+      "id": "111",
+      "name": "fk_Work_Orders_technician_id_Technicians_technician_id",
+      "sourceTableId": "1",
+      "targetTableId": "33",
+      "sourceFieldId": "2",
+      "targetFieldId": "36",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1776379123267,
+      "diagramId": "fq0skcemn6y2"
+    }
+  ],
+  "dependencies": [],
+  "areas": [],
+  "customTypes": [],
+  "notes": []
+}
